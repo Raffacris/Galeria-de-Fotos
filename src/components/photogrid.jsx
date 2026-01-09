@@ -1,6 +1,6 @@
 import React from 'react';
 
-// Dados estáticos de exemplo (Mínimo 10 como pedido)
+
 const photos = [
   { id: 1, title: "Montanha", url: "https://picsum.photos/id/10/400/300" },
   { id: 2, title: "Lago Azul", url: "https://picsum.photos/id/11/400/300" },
@@ -15,7 +15,7 @@ const photos = [
 ];
 
 export function PhotoGrid({ searchTerm }) {
-  // Lógica de filtro: apenas fotos que contenham o texto da busca no título
+  
   const filteredPhotos = photos.filter(photo =>
     photo.title.toLowerCase().includes(searchTerm.toLowerCase())
   );

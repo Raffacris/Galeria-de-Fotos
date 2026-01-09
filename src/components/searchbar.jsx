@@ -1,6 +1,6 @@
-// src/components/SearchBar.jsx
+
 import React from 'react';
-import { FaSearch } from 'react-icons/fa'; // Opcional: instale react-icons
+import { FaSearch } from 'react-icons/fa'; 
 
 export function SearchBar({ searchTerm, onSearchChange }) {
   return (
