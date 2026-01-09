@@ -1,0 +1,60 @@
+/* Layout Geral */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+}
+
+main { flex: 1; padding: 20px; }
+
+/* Barra de Busca */
+.search-container { margin-bottom: 30px; }
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Grid de Fotos */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.photo-item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito Visual */
+}
+
+/* Efeito de Hover solicitado */
+.photo-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+.photo-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.photo-item p {
+  margin-top: 10px;
+  font-weight: bold;
+}
